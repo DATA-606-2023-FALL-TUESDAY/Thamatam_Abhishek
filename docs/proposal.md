@@ -11,8 +11,9 @@
 ## 2. Background
 
 
-- Using data science and machine learning, predictive modeling for health inspections helps predict which restaurants might fail health inspections done by local health departments. It uses past inspection info, restaurant details, and more to find places that might have food safety issues.By doing so, it aims to assist health departments in allocating their inspection resources more effectively and improving public health by reducing foodborne illnesses.
-- Food safety is a critical public health concern, and restaurants play a significant role in ensuring the safety of the food they serve to the public. The usual health inspections take a lot of time and might not happen often enough to stop problems. Predictive modeling for health inspections is important for a few reasons:
+Using data science and machine learning, predictive modeling for health inspections helps predict which restaurants might fail health inspections done by local health departments. It uses past inspection info, restaurant details, and more to find places that might have food safety issues. By doing so, it aims to assist health departments in allocating their inspection resources more effectively and improving public health by reducing foodborne illnesses.
+
+Food safety is a critical public health concern, and restaurants play a significant role in ensuring the safety of the food they serve to the public. The usual health inspections take a lot of time and might not happen often enough to stop problems. Predictive modeling for health inspections is important for a few reasons:
 
   *Resource Allocation:* It helps health departments decide which places to inspect more often based on how risky they are. Risky places get checked more, and safer ones get checked less. This way, resources are used well.
 
@@ -20,7 +21,7 @@
 
   *Public Health:* Doing inspections this way can lead to a reduction in foodborne illnesses and related hospitalizations, ultimately improving public health outcomes.
 - Research questions
-1. Can we predict the outcome of a restaurant's health inspection based on historical data and restaurant attributes?
+1. Are there potential biases in the data or model predictions that need to be addressed to ensure fairness in inspection processes?
 2. What are the key factors that influence the likelihood of a restaurant failing an inspection?
 3. Can we develop an early warning system that identifies restaurants at risk of failing inspections well in advance of the actual inspection date?
 4. How early can we predict potential issues to allow for proactive intervention?
@@ -29,8 +30,7 @@
 7, How can geospatial information be incorporated into the predictive model?
 8. What is the relationship between specific types of violations (e.g., critical vs. non-critical) and the overall inspection outcome?
 9. Can we identify which types of violations are most strongly correlated with inspection failure?
-10. Are there potential biases in the data or model predictions that need to be addressed to ensure fairness in inspection processes?
-
+   
 ## 3. Data 
 
 Describe the datasets you are using to answer your research questions.
