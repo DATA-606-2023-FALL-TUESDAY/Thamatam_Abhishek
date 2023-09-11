@@ -90,28 +90,40 @@ Describe the datasets you are using to answer your research questions.
 2. ACTION (Actions associated with inspections):
 
     Violations were cited in the following area(s).
+   
     No violations were recorded at the time of this inspection.
+   
     Establishment re-opened by DOHMH
+   
     Establishment re-closed by DOHMH
+   
     Establishment Closed by DOHMH. Violations were cited in the following area(s) and those requiring immediate action were addressed.
+   
     "Missing" = Not yet inspected.
 
-3. CRITICAL FLAG (Indicator of critical violation):
+4. CRITICAL FLAG (Indicator of critical violation):
 
     Critical
+   
     Not Critical
+   
     Not Applicable
 
-4. GRADE (Grade associated with the inspection):
+6. GRADE (Grade associated with the inspection):
 
     N = Not Yet Graded
+   
     A = Grade A
+   
     B = Grade B
+   
     C = Grade C
+   
     Z = Grade Pending
+   
     P = Grade Pending issued on re-opening following an initial inspection that resulted in a closure
 
-5. INSPECTION TYPE (Combination of inspection program and type):
+8. INSPECTION TYPE (Combination of inspection program and type):
 
     Various types of inspection programs and types. Specific values may vary.
 
