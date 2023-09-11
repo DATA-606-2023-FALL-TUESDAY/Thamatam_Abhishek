@@ -5,8 +5,8 @@
 - Author Name: Abhishek Goud Thamatam 
 - [GitHub](https://github.com/abhishekgoud23)
 - [LinkedIn](https://www.linkedin.com/in/t-abhishek-goud/)
-- Link to your PowerPoint presentation file
-- Link to your YouTube video 
+- Link to your PowerPoint presentation file - yet to complete
+- Link to your YouTube video - yet to complete
     
 ## 2. Background
 
@@ -22,7 +22,7 @@ Food safety is a critical public health concern, and restaurants play a signific
   *Public Health:* Doing inspections this way can lead to a reduction in foodborne illnesses and related hospitalizations, ultimately improving public health outcomes.
 - Research questions
 1. Are there potential biases in the data or model predictions that need to be addressed to ensure fairness in inspection processes?
-2. What are the key factors that influence the likelihood of a restaurant failing an inspection?
+2. What key factors influence the likelihood of a restaurant failing an inspection?
 3. Can we develop an early warning system that identifies restaurants at risk of failing inspections well in advance of the actual inspection date?
 4. How early can we predict potential issues to allow for proactive intervention?
 5. How can predictive modeling be used to allocate inspection resources more efficiently? For example, can we prioritize inspections for high-risk establishments while reducing the frequency of inspections for low-risk ones?
@@ -35,12 +35,12 @@ Food safety is a critical public health concern, and restaurants play a signific
 
 Describe the datasets you are using to answer your research questions.
 
-- Data sources: NYC OpenData
+- Data sources: NYC OpenData [Dataset link](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j)
 - Data size: 92 MB
 - Data shape: # of rows - 205K and # columns - 27
 - Time period: 2014 - 2023
-- **What does each row represent?(a patient, a school, a crime, etc.)** - Inspection
-- Data dictionary
+- **Each row represent** - Inspection values
+- Data dictionary: 
   
 | Column Name           | Description                                                   | Type             |
 | ----------------------| ------------------------------------------------------------- | ----------------- |
@@ -76,42 +76,50 @@ Describe the datasets you are using to answer your research questions.
 
 1. BORO (Borough):
 
-1 = MANHATTAN
-2 = BRONX
-3 = BROOKLYN
-4 = QUEENS
-5 = STATEN ISLAND
+    1 = MANHATTAN
+ 
+    2 = BRONX
+ 
+    3 = BROOKLYN
+ 
+    4 = QUEENS
+ 
+    5 = STATEN ISLAND
+ 
 
 2. ACTION (Actions associated with inspections):
 
-Violations were cited in the following area(s).
-No violations were recorded at the time of this inspection.
-Establishment re-opened by DOHMH
-Establishment re-closed by DOHMH
-Establishment Closed by DOHMH. Violations were cited in the following area(s) and those requiring immediate action were addressed.
-"Missing" = Not yet inspected.
+    Violations were cited in the following area(s).
+    No violations were recorded at the time of this inspection.
+    Establishment re-opened by DOHMH
+    Establishment re-closed by DOHMH
+    Establishment Closed by DOHMH. Violations were cited in the following area(s) and those requiring immediate action were addressed.
+    "Missing" = Not yet inspected.
 
 3. CRITICAL FLAG (Indicator of critical violation):
 
-Critical
-Not Critical
-Not Applicable
+    Critical
+    Not Critical
+    Not Applicable
 
 4. GRADE (Grade associated with the inspection):
 
-N = Not Yet Graded
-A = Grade A
-B = Grade B
-C = Grade C
-Z = Grade Pending
-P = Grade Pending issued on re-opening following an initial inspection that resulted in a closure
+    N = Not Yet Graded
+    A = Grade A
+    B = Grade B
+    C = Grade C
+    Z = Grade Pending
+    P = Grade Pending issued on re-opening following an initial inspection that resulted in a closure
 
 5. INSPECTION TYPE (Combination of inspection program and type):
 
-Various types of inspection programs and types. Specific values may vary.
+    Various types of inspection programs and types. Specific values may vary.
 
-- I have to do more research on selecting the target variable. few possibilities:
+**Target variable:**
+
+I have to do more research on selecting the target variable. Few possibilities:
 GRADE, VIOLATION CODE, CRITICAL FLAG, SCORE, ACTION
 
-- Potential Features:
-CUISINE DESCRIPTION, BORO, ZIPCODE, VIOLATION CODE and VIOLATION DESCRIPTION, CRITICAL FLAG, Latitude and Longitude, Previous Inspection Scores or Grades
+**Potential Features:**
+
+I have to do more research on Potential Features too. Few possibilities: CUISINE DESCRIPTION, BORO, ZIPCODE, VIOLATION CODE and VIOLATION DESCRIPTION, CRITICAL FLAG, Latitude and Longitude, Previous Inspection Scores or Grades
