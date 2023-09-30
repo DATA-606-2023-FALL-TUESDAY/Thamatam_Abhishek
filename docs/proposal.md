@@ -39,7 +39,7 @@ Describe the datasets you are using to answer your research questions.
 - Data size: 92 MB
 - Data shape: # of rows - 205K and # columns - 27
 - Time period: 2014 - 2023
-- **Each row represent** - Inspection values
+- **Each row represent** - Inspection values(Restaurant Citations)
 - Data dictionary: 
   
 | Column Name           | Description                                                   | Type             |
