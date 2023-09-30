@@ -127,9 +127,8 @@ Food safety is a critical public health concern, and restaurants play a signific
 
 **Target variable:**
 
-I have to do more research on selecting the target variable. Few possibilities:
-GRADE, VIOLATION CODE, CRITICAL FLAG, SCORE, ACTION
+CRITICAL FLAG (Classification Problem)
 
 **Potential Features:**
 
-I have to do more research on Potential Features too. Few possibilities: CUISINE DESCRIPTION, BORO, ZIPCODE, VIOLATION CODE and VIOLATION DESCRIPTION, CRITICAL FLAG, Latitude and Longitude, Previous Inspection Scores or Grades
+I have to do more research on Potential Features too. Few possibilities: CUISINE DESCRIPTION, BORO, ZIPCODE, VIOLATION CODE, Scores.
