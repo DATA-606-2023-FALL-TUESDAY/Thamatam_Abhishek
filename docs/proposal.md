@@ -21,19 +21,14 @@ Food safety is a critical public health concern, and restaurants play a signific
 
   *Public Health:* Doing inspections this way can lead to a reduction in foodborne illnesses and related hospitalizations, ultimately improving public health outcomes.
 - Research questions
-1. Are there potential biases in the data or model predictions that need to be addressed to ensure fairness in inspection processes?
-2. What key factors influence the likelihood of a restaurant failing an inspection?
-3. Can we develop an early warning system that identifies restaurants at risk of failing inspections well in advance of the actual inspection date?
-4. How early can we predict potential issues to allow for proactive intervention?
-5. How can predictive modeling be used to allocate inspection resources more efficiently? For example, can we prioritize inspections for high-risk establishments while reducing the frequency of inspections for low-risk ones?
-6. What is the trade-off between inspection frequency and public safety, and how can it be optimized?
-7, How can geospatial information be incorporated into the predictive model?
-8. What is the relationship between specific types of violations (e.g., critical vs. non-critical) and the overall inspection outcome?
-9. Can we identify which types of violations are most strongly correlated with inspection failure?
+  Analysis:
+1. What key factors influence the likelihood of a restaurant failing an inspection?
+2. What is the trade-off between inspection frequency and public safety, and how can it be optimized?
+  ML:
+1. How can predictive modeling be used to allocate inspection resources more efficiently? For example, can we prioritize inspections for high-risk establishments while reducing the frequency of inspections for low-risk ones?
+2. Can we develop an early warning system that identifies restaurants at risk of failing inspections well in advance of the actual inspection date?
    
 ## 3. Data 
-
-Describe the datasets you are using to answer your research questions.
 
 - Data sources: NYC OpenData [Dataset link](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j)
 - Data size: 92 MB
