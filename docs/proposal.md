@@ -20,11 +20,14 @@ Food safety is a critical public health concern, and restaurants play a signific
   *Early Intervention:* By identifying establishments with a higher likelihood of violations, health departments can step in early to help them follow the rules and keep food safe.
 
   *Public Health:* Doing inspections this way can lead to a reduction in foodborne illnesses and related hospitalizations, ultimately improving public health outcomes.
-- Research questions
-  Analysis:
+  
+### Research questions
+
+- Analysis:
 1. What key factors influence the likelihood of a restaurant failing an inspection?
 2. What is the trade-off between inspection frequency and public safety, and how can it be optimized?
-  ML:
+
+- ML:
 1. How can predictive modeling be used to allocate inspection resources more efficiently? For example, can we prioritize inspections for high-risk establishments while reducing the frequency of inspections for low-risk ones?
 2. Can we develop an early warning system that identifies restaurants at risk of failing inspections well in advance of the actual inspection date?
    
