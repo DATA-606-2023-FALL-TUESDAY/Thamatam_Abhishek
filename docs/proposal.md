@@ -1,6 +1,6 @@
 ## 1. Title and Author
 
-- Project Title: Predictive Modeling for Health Inspections
+- Project Title: **InspectionGuard** - Predictive Analytics for Food Safety
 - Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
 - Author Name: Abhishek Goud Thamatam 
 - [GitHub](https://github.com/abhishekgoud23)
@@ -28,9 +28,8 @@ Food safety is a critical public health concern, and restaurants play a signific
 2. What is the trade-off between inspection frequency and public safety, and how can it be optimized?
 
 - ML:
-1. How can predictive modeling be used to allocate inspection resources more efficiently? For example, can we prioritize inspections for high-risk establishments while reducing the frequency of inspections for low-risk ones?
-2. Can we develop an early warning system that identifies restaurants at risk of failing inspections well in advance of the actual inspection date?
-   
+
+How can predictive modeling be used to allocate inspection resources more efficiently? For example, can we prioritize inspections for high-risk establishments while reducing the frequency of inspections for low-risk ones?   
 ## 3. Data 
 
 - Data sources: NYC OpenData [Dataset link](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j)
