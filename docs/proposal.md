@@ -24,6 +24,7 @@ Food safety is a critical public health concern, and restaurants play a signific
 ### Research questions
 
 - Analysis:
+  
  What key factors influence the likelihood of a restaurant failing an inspection?
 
 - ML:
