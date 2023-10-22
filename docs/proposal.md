@@ -126,8 +126,107 @@ How can predictive modeling be used to allocate inspection resources more effici
 
 **Target variable:**
 
+
 CRITICAL FLAG (Classification Problem)
 
 **Potential Features:**
 
 I have to do more research on Potential Features too. Few possibilities: CUISINE DESCRIPTION, BORO, ZIPCODE, VIOLATION CODE, Scores.
+
+## 4. Exploratory Data Analysis (EDA)
+
+In this report, we will perform data exploration using the Jupyter Notebook to prepare our data for predictive modeling in the field of health inspection resource allocation. The primary goals of this EDA are to gain insights into the dataset, identify potential issues, and ensure that the data is well-prepared for machine learning. EDA is a crucial initial step in the data science workflow as it helps in understanding the data, identifying potential issues, and preparing the dataset for predictive modeling.
+
+### Summary Statistics
+
+To understand the central tendencies and distributions of key variables, we will produce summary statistics. This will provide a quick overview of the data's numerical characteristics.
+
+|index|CAMIS|ZIPCODE|SCORE|Latitude|Longitude|Community Board|Council District|Census Tract|BIN|BBL|Location Point1|Zip Codes|Community Districts|Borough Boundaries|City Council Districts|Police Precincts|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|count|204779\.0|202065\.0|195292\.0|204521\.0|204521\.0|201528\.0|201524\.0|201524\.0|200511\.0|204236\.0|0\.0|0\.0|0\.0|0\.0|0\.0|0\.0|
+|mean|47501541\.44339019|10707\.780372652363|22\.56001269893288|40\.18764349800532|-72\.9619926917571|254\.3530824500814|20\.8012594033465|30121\.92546793434|2572959\.1717860866|2460530335\.0888925|NaN|NaN|NaN|NaN|NaN|NaN|
+|std|4051338\.676293571|594\.1668956080247|17\.42482680570349|4\.655750489806165|8\.452103609005125|129\.8922178957821|15\.793059468100164|31585\.262773793642|1343615\.846794968|1335404678\.9575863|NaN|NaN|NaN|NaN|NaN|NaN|
+|min|30075445\.0|8512\.0|0\.0|0\.0|-74\.249101331725|101\.0|1\.0|100\.0|1000000\.0|1\.0|NaN|NaN|NaN|NaN|NaN|NaN|
+|25%|41639626\.0|10023\.0|11\.0|40\.682963614771|-73\.988819791819|106\.0|4\.0|8000\.0|1051401\.0|1011137502\.0|NaN|NaN|NaN|NaN|NaN|NaN|
+|50%|50064472\.0|11101\.0|18\.0|40\.730345398397|-73\.956204843605|302\.0|20\.0|17700\.0|3020902\.0|3007780010\.0|NaN|NaN|NaN|NaN|NaN|NaN|
+|75%|50105567\.0|11231\.0|30\.0|40\.761156327016|-73\.896037248187|401\.0|34\.0|42600\.0|4005905\.0|4004337501\.0|NaN|NaN|NaN|NaN|NaN|NaN|
+|max|50141665\.0|12345\.0|168\.0|40\.912822326386|0\.0|595\.0|51\.0|162100\.0|5799501\.0|5270000501\.0|NaN|NaN|NaN|NaN|NaN|NaN|
+
+### Data Cleansing
+
+#### Data Selection and Focus
+
+My analysis will focus on the target variable and selected features. All other columns will be dropped to streamline the dataset for predictive modeling. I dropped these columns based on domain knowledge, understanding of data, and No values in some columns.
+
+'BUILDING',' STREET', 'PHONE',' Community Board', 'VIOLATION CODE', 'CAMIS', 'DBA',' VIOLATION DESCRIPTION',' INSPECTION TYPE',' GRADE DATE',	'RECORD DATE',' Council District', 'Census Tract', 'BIN', 'BBL', 'NTA', 'Location Point1', 'Zip Codes', 'Community Districts', 'Borough Boundaries', 'City Council Districts',' Police Precincts'
+#### Missing Values
+
+Checking for null values, I found the following number of null cells:
+
+BORO                        0
+ZIPCODE                  2714
+CUISINE DESCRIPTION      2319
+INSPECTION DATE             0
+ACTION                   2319
+CRITICAL FLAG               0
+SCORE                    9487
+GRADE                  103307
+Latitude                  258
+Longitude                 258
+
+I dropped all rows with null values as I can't give mean etc to replace null.
+
+#### Duplicate Rows
+
+Duplicate rows can distort my analysis, so I will identify and remove any duplicate entries. I have found '93540' rows with duplicate data and dropped them.
+
+After clearing rows with null values and duplicate rows, the number of columns was reduced from 204779 to 64658
+
+### Data Transformation
+
+Depending on my analysis goals, I performed data filtering, Mapping, and Extracting to structure the data more suitably. These transformations will be based on the specific requirements of our predictive modeling task.
+
+Filtering: Filtered all rows with 'Not Applicable' values as this is my target variable, I must have an output value.
+Mapping: Converted all Yes/No and types of violations into numeric to make it easier.
+Extraction: Extracted Month and Year from Inspection date, as features available are not highly correlated, I want to extract this as the process of Feature engineering.
+
+### Data Analysis and Visualizations
+
+I created visualizations using Plotly Express, a powerful Python library for interactive data visualization. These visualizations will help me gain a better understanding of the dataset and its characteristics.
+
+1. Time Series Analysis: Since we have an 'INSPECTION DATE' column, we can perform a time series analysis to explore trends and patterns over time
+
+<img src="images/newplot (1).png" alt="Mean Inspection Scores Over Time" width="1000" height="300">
+
+The score has increased over the years.
+
+<img src="images/newplot (2).png" alt="Mean Inspection Scores Over Time Months" width="1000" height="300">
+
+The score is neither increasing nor decreasing continuously over the months. But we can see the peak and deep points in the month of August and May respectively.
+
+
+2. Distribution of Inspection Scores: This histogram will give you an overview of how inspection scores are distributed. Visualize the distribution of numerical variables and identify any outliers.
+
+<img src="images/newplot (3).png" alt="MDistribution of Inspection Scores" width="1000" height="400">
+
+Scores 12 and 13 are the most repeated among all scores
+
+3. Count of Inspections by Borough: This bar chart shows the number of inspections in each borough.
+
+<img src="images/newplot (4).png" alt="Count of Inspections by Borough" width="1000" height="400">
+
+The number of inspections happening in Manhattan is high compared to the rest Boroughs. Followed by Brooklyn, Queens, and Bronx. The lowest number of inspections happen in Staten Island(which is almost 1/10th of Manhattan). 
+
+4. The mean score is approximately the same in each borough.
+
+<img src="images/newplot (5).png" alt="Mean Scores in each borough" width="1000" height="400">
+
+5. Critical vs. Non-Critical Violations: This pie chart displays the proportion of critical and non-critical violations in your dataset.
+
+<img src="images/Screenshot 2023-10-21 at 10.20.23 PM.png" alt="Mean Scores in each borough" width="1000" height="400">
+We have an almost equal number of critical and noncritical violation data in our cleaned data set.
+
+6. 
+<img src="images/download.png" alt="Mean Scores in each borough" width="1000" height="400">
+When we count cuisine types, the number of American cuisines is much higher with almost 12k, followed by Chinese, Coffee/Tea, and pizza. The next 6 cuisines are varied by a small margin around 2k.
+
