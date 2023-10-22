@@ -30,7 +30,10 @@ Food safety is a critical public health concern, and restaurants play a signific
 - ML:
 
 How can predictive modeling be used to allocate inspection resources more efficiently? For example, can we prioritize inspections for high-risk establishments while reducing the frequency of inspections for low-risk ones?   
+
+
 ## 3. Data 
+
 
 - Data sources: NYC OpenData [Dataset link](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j)
 - Data size: 92 MB
@@ -133,9 +136,11 @@ CRITICAL FLAG (Classification Problem)
 
 I have to do more research on Potential Features too. Few possibilities: CUISINE DESCRIPTION, BORO, ZIPCODE, VIOLATION CODE, Scores.
 
+
 ## 4. Exploratory Data Analysis (EDA)
 
-In this report, we will perform data exploration using the Jupyter Notebook to prepare our data for predictive modeling in the field of health inspection resource allocation. The primary goals of this EDA are to gain insights into the dataset, identify potential issues, and ensure that the data is well-prepared for machine learning. EDA is a crucial initial step in the data science workflow as it helps in understanding the data, identifying potential issues, and preparing the dataset for predictive modeling.
+
+In this report, I will perform data exploration using the Jupyter Notebook to prepare data for predictive modeling in the field of health inspection resource allocation. The primary goals of this EDA are to gain insights into the dataset, identify potential issues, and ensure that the data is well-prepared for machine learning. EDA is a crucial initial step in the data science workflow as it helps in understanding the data, identifying potential issues, and preparing the dataset for predictive modeling.
 
 ### Summary Statistics
 
@@ -162,17 +167,18 @@ My analysis will focus on the target variable and selected features. All other c
 #### Missing Values
 
 Checking for null values, I found the following number of null cells:
-
-BORO                        0
-ZIPCODE                  2714
-CUISINE DESCRIPTION      2319
-INSPECTION DATE             0
-ACTION                   2319
-CRITICAL FLAG               0
-SCORE                    9487
-GRADE                  103307
-Latitude                  258
-Longitude                 258
+|Column|No. of Null cells|
+|---|---|
+|BORO|0|
+|ZIPCODE|2714|
+|CUISINE DESCRIPTION|2319|
+|INSPECTION DATE|0|
+|ACTION|2319|
+|CRITICAL FLAG|0|
+|SCORE|9487|
+|GRADE|103307|
+|Latitude|258|
+|Longitude|258|
 
 I dropped all rows with null values as I can't give mean etc to replace null.
 
@@ -187,7 +193,9 @@ After clearing rows with null values and duplicate rows, the number of columns w
 Depending on my analysis goals, I performed data filtering, Mapping, and Extracting to structure the data more suitably. These transformations will be based on the specific requirements of our predictive modeling task.
 
 Filtering: Filtered all rows with 'Not Applicable' values as this is my target variable, I must have an output value.
+
 Mapping: Converted all Yes/No and types of violations into numeric to make it easier.
+
 Extraction: Extracted Month and Year from Inspection date, as features available are not highly correlated, I want to extract this as the process of Feature engineering.
 
 ### Data Analysis and Visualizations
