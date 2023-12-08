@@ -1,4 +1,4 @@
-<img src="IMG.jpg" alt="Headshot" width="150" height="150">
+<img src="images/IMG.jpg" alt="Headshot" width="150" height="150">
 
 # ABHISHEK GOUD THAMATAM
 +1 (347)-861-3400 • abhishekgoud.thamatam@gmail.com • [LinkedIn](https://www.linkedin.com/in/t-abhishek-goud/) • [GitHub](https://github.com/abhishekgoud23) • [Portfolio](https://abhishekgoud23.github.io/abhishekthamatam.github.io/) • MD, USA, 21228
