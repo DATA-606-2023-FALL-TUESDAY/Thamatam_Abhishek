@@ -243,32 +243,6 @@ When we count cuisine types, the number of American cuisines is much higher with
 
 In this phase, diverse machine learning models are employed to harness predictive analytics for the InspectionGuard project. The selected models include the Random Forest Classifier, Logistic Regression, DecisionTreeClassifier, and XGBClassifier.
 
-### Models Used:
-
-#### Random Forest Classifier:
-
-**Strengths:** Robust handling of complex relationships in data, solid baseline performance.
-
-**Considerations:** Moderate accuracy compared to other models.
-
-#### Logistic Regression:
-
-**Strengths:** Simplicity and efficiency in binary classification, excellent accuracy.
-
-**Considerations:** May not capture complex relationships.
-
-#### DecisionTreeClassifier:
-
-**Strengths:** Interpretable and visually clear decision-making, identifies important features.
-
-**Considerations:** Lower accuracy compared to other models.
-
-#### XGBClassifier:
-
-**Strengths:** Ensemble learning for efficiency, balances bias-variance trade-off.
-
-**Considerations:** Moderate accuracy, falls between Random Forest and Logistic Regression.
-
 ### Model Training Approach:
 
 #### Train vs Test Split:
@@ -285,5 +259,46 @@ Splitting the dataset into training and testing sets is essential for model eval
 
 To assess and compare the performance of our models, I will employ various metrics such as accuracy, precision, recall, and F1-score. The `classification_report` function from scikit-learn will provide a comprehensive overview of the model's performance, including precision, recall, and F1-score for each class. The accuracy score will serve as a fundamental metric, representing the overall correctness of the model predictions.
 
+### Models Used:
+
+#### Random Forest Classifier:
+
+**Strengths:** Robust handling of complex relationships in data, solid baseline performance.
+
+**Considerations:** Moderate accuracy compared to other models.
+
+Performance of random forest:
+
+<img src="images/RF acc.png" alt="Random forest accuracy" width="500" height="150">
+
+#### Logistic Regression:
+
+**Strengths:** Simplicity and efficiency in binary classification, excellent accuracy.
+
+**Considerations:** May not capture complex relationships.
+
+Performance of Logistic Regression:
+
+<img src="images/LR acc.png" alt="Logistic Regression accuracy" width="500" height="150">
+
+#### Decision Tree Classifier:
+
+**Strengths:** Interpretable and visually clear decision-making, identifies important features.
+
+**Considerations:** Lower accuracy compared to other models.
+
+Performance of Decision Tree Classifier:
+
+<img src="images/DT acc.png" alt="Decision Tree Classifier accuracy" width="500" height="150">
+
+#### XGB Classifier:
+
+**Strengths:** Ensemble learning for efficiency, balances bias-variance trade-off.
+
+**Considerations:** Moderate accuracy, falls between Random Forest and Logistic Regression.
+
+Performance of XGB Classifier:
+
+<img src="images/XGB acc.png" alt="XGB Classifier accuracy" width="500" height="150">
 
 
