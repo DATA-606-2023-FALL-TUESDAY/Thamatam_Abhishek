@@ -36,12 +36,12 @@ How can predictive modeling be used to allocate inspection resources more effici
 ## 3. Data 
 
 
-- Data sources: NYC OpenData [Dataset link](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j)
-- Data size: 92 MB
-- Data shape: # of rows - 205K and # columns - 27
-- Time period: 2014 - 2023
+- **Data sources:** NYC OpenData [Dataset link](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j)
+- **Data size:** 92 MB
+- **Data shape:** # of rows - 205K and # columns - 27
+- **Time period:** 2014 - 2023
 - **Each row represent** - Inspection values(Restaurant Citations)
-- Data dictionary: 
+- **Data dictionary:**
   
 | Column Name           | Description                                                   | Type             |
 | ----------------------| ------------------------------------------------------------- | ----------------- |
