@@ -222,7 +222,7 @@ Scores 12 and 13 are the most repeated among all scores
 
 3. Count of Inspections by Borough: This bar chart shows the number of inspections in each borough.
 
-<img src="images/newplot (4).png" alt="Count of Inspections by Borough" width="1000" height="400">
+<img src="images/newplot (6).png" alt="Count of Inspections by Borough" width="1000" height="400">
 
 The number of inspections happening in Manhattan is high compared to the rest Boroughs. Followed by Brooklyn, Queens, and Bronx. The lowest number of inspections happen in Staten Island(which is almost 1/10th of Manhattan). 
 
