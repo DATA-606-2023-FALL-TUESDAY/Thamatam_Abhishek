@@ -238,3 +238,52 @@ We have an almost equal number of critical and noncritical violation data in our
 6. 
 <img src="images/download.png" alt="Mean Scores in each borough" width="1000" height="400">
 When we count cuisine types, the number of American cuisines is much higher with almost 12k, followed by Chinese, Coffee/Tea, and pizza. The next 6 cuisines are varied by a small margin around 2k.
+
+## 5. Model Training
+
+In this phase, diverse machine learning models are employed to harness predictive analytics for the InspectionGuard project. The selected models include the Random Forest Classifier, Logistic Regression, DecisionTreeClassifier, and XGBClassifier.
+
+### Models Used:
+
+#### Random Forest Classifier:
+
+**Strengths:** Robust handling of complex relationships in data, solid baseline performance.
+
+**Considerations:** Moderate accuracy compared to other models.
+
+#### Logistic Regression:
+
+**Strengths:** Simplicity and efficiency in binary classification, excellent accuracy.
+
+**Considerations:** May not capture complex relationships.
+
+#### DecisionTreeClassifier:
+
+**Strengths:** Interpretable and visually clear decision-making, identifies important features.
+
+**Considerations:** Lower accuracy compared to other models.
+
+#### XGBClassifier:
+
+**Strengths:** Ensemble learning for efficiency, balances bias-variance trade-off.
+
+**Considerations:** Moderate accuracy, falls between Random Forest and Logistic Regression.
+
+### Model Training Approach:
+
+#### Train vs Test Split:
+
+Splitting the dataset into training and testing sets is essential for model evaluation. I will use an 80/20 split, allocating 80% of the data for training and 20% for testing.
+
+#### Tools and Packages:
+
+**Python Packages:** I will leverage the scikit-learn library for its comprehensive set of tools for machine learning. Utilizing scikit-learn ensures ease of implementation and compatibility with various machine learning algorithms.
+
+**Development Environment:** Google Colab is our development environment of choice, providing a collaborative and cloud-based platform for efficient model training. Colab offers GPU acceleration, facilitating faster model training.
+
+#### Model Performance Evaluation:
+
+To assess and compare the performance of our models, I will employ various metrics such as accuracy, precision, recall, and F1-score. The `classification_report` function from scikit-learn will provide a comprehensive overview of the model's performance, including precision, recall, and F1-score for each class. The accuracy score will serve as a fundamental metric, representing the overall correctness of the model predictions.
+
+
+
