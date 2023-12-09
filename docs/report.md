@@ -1,9 +1,9 @@
 ## 1. Title and Author
 
-- Project Title: **InspectionGuard** - Predictive Analytics for Food Safety
+- **Project Title:** **InspectionGuard** - Predictive Analytics for Food Safety
 - Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
-- Author Name: Abhishek Goud Thamatam
-- - **Semester** - Fall 2023
+- **Author Name:** Abhishek Goud Thamatam
+- **Semester** - Fall 2023
 - <a href="https://github.com/abhishekgoud23"><img align="left" src="https://img.shields.io/badge/-GitHub-CD5C5C?logo=github&style=flat" alt="icon | GitHub"/></a> 
 - <a href="https://www.linkedin.com/in/t-abhishek-goud/"><img align="left" src="https://img.shields.io/badge/-LinkedIn-1E90FF?logo=linkedin&style=flat" alt="icon | LinkedIn"/></a>
 - <a href="https://github.com/DATA-606-2023-FALL-TUESDAY/Thamatam_Abhishek/blob/main/docs/Presentation/InspectionGuard%20-%20Predictive%20Analytics%20for%20Food%20Safety.pptx"><img src="https://img.shields.io/badge/-PowerPoint Presentation Download-B7472A?logo=microsoftpowerpoint&style=flat" alt="icon | GitHub"/></a>  
