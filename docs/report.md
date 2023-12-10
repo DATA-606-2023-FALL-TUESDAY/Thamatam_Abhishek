@@ -405,3 +405,12 @@ My efforts with InspectionGuard center around developing predictive analytics fo
 ### Closing Remarks:
 
 In conclusion, InspectionGuard represents a significant step toward proactive food safety practices. While our current models showcase promising results, continuous refinement and exploration of advanced techniques are essential for further improvement. The potential applications of our work extend beyond predictive analytics, aiming to create a lasting impact on public health through informed decision-making in health inspections.
+
+## 8. References
+
+1. New York City Department of Health and Mental Hygiene (DOHMH). (2023). "NYC OpenData - Restaurant Inspection Results." [Link](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j)
+
+2. Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., ... & Duchesnay, É. (2011). Scikit-learn: Machine learning in Python. Journal of Machine Learning Research, 12(Oct), 2825-2830.
+
+3. Chen, T., & Guestrin, C. (2016). XGBoost: A scalable tree boosting system. In Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining (pp. 785-794).
+
