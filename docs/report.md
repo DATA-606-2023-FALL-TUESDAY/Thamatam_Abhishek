@@ -7,7 +7,7 @@
 - <a href="https://github.com/abhishekgoud23"><img align="left" src="https://img.shields.io/badge/-GitHub-CD5C5C?logo=github&style=flat" alt="icon | GitHub"/></a> 
 - <a href="https://www.linkedin.com/in/t-abhishek-goud/"><img align="left" src="https://img.shields.io/badge/-LinkedIn-1E90FF?logo=linkedin&style=flat" alt="icon | LinkedIn"/></a>
 - <a href="https://github.com/DATA-606-2023-FALL-TUESDAY/Thamatam_Abhishek/blob/main/docs/Presentation/Capstone.pptx"><img src="https://img.shields.io/badge/-PowerPoint Presentation Download-B7472A?logo=microsoftpowerpoint&style=flat" alt="icon | GitHub"/></a>  
-- Link to your YouTube video - In progress
+- <a href="https://youtu.be/I16YczucZwY"><img align="left" src="https://img.shields.io/badge/-YouTube Presentation-FF0000?logo=youtube&style=flat" alt="icon | YouTube"/></a> 
     
 ## 2. Background
 
